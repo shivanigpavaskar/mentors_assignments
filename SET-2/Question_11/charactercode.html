@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+
+
+        const inputString = "Uniform Resource Locator";
+        const capsChar = charCode(inputString);
+        document.write("Character Codes of Capital Letters are:", capsChar + "<br>");
+
+        const outputString = opStr(capsChar);
+        document.write("Output Characters are:", outputString);
+
+
+
+
+
+
+
+        function charCode(input) {
+            const capsChar = [];
+
+            for (let i = 0; i < input.length; i++) {
+                const char = input[i];
+                if (char >= 'A' && char <= 'Z') {
+                    capsChar[capsChar.length] = char.charCodeAt(0);
+                }
+            }
+            return capsChar;
+        }
+        function opStr(characterCodes) {
+            let output = '';
+            for (let i = 0; i < characterCodes.length; i++) {
+                output += String.fromCharCode(characterCodes[i]);
+            }
+            return output;
+        }
+
+
+
+    </script>
+</head>
+
+</html>

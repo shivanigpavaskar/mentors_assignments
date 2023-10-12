@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+ 
+
+<p>In the morning we say,"Good Morning". was replaced with:</p>
+<p id="demo"></p>
+
+<script>
+let text = 'In the morning, we say "Good Morning."'
+text = text.replaceAll("Morning","night");
+text = text.replaceAll("morning","night");
+text = text.replaceAll("In the","At");
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>

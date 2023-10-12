@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+ 
+<pre><p id="demo1"></p></pre>
+<pre><p id="demo2"></p></pre>
+
+<script>
+let text = "    Have a great day!    ";
+let result = text.replace(/^\s+|\s+$/gm,'');
+
+document.getElementById("demo1").innerHTML = text;
+document.getElementById("demo2").innerHTML = result;
+</script>
+
+</body>
+</html>
